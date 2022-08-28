@@ -1,23 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
+import AndyFunny from './Andy-Funny.jpg';
+import TanyaFunny from './Tanya-Funny.jpg';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+        Tanya & Her Bad Bitches' Scavenger Hunt
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
       </header>
+      <div className="TanyaOrAndy">
+        <p>
+          Insert Tanya Or Andy Question Here
+        </p>
+      </div>
+      <div className="TanyaOrAndyButtons">
+      <span className="Tanya">
+        <img className="TanyaImage" alt="Pic of Tanya" src={TanyaFunny}/>
+        <p>Tanya</p>
+      </span>
+      <span className="Andy">
+      <img className="AndyImage" alt="Pic of Andy" src={AndyFunny}/>
+      <p>Andy</p>
+      </span>
+      </div>
+      <div className="CorrectOrIncorrect">
+        <span className="Correct">
+          <p>Correct, you'll be ordering a Pornstar Martini!</p>
+        </span>
+        <span className="Incorrect">
+          <p>Incorrect, you'll be ordering 2 shots of Sambuca... each</p>
+        </span>
+      </div>
     </div>
   );
 }
