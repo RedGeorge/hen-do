@@ -1,5 +1,5 @@
 import './App.css';
-import AndyFunny from './Andy-Funny.jpg';
+/*import AndyFunny from './Andy-Funny.jpg';
 import TanyaFunny from './Tanya-Funny.jpg';
 
 function App() {
@@ -7,25 +7,26 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-        Tanya & Her Bad Bitches' Scavenger Hunt
+          Tanya & Her Bad Bitches' Scavenger Hunt
         </p>
-
       </header>
+
       <div className="TanyaOrAndy">
-        <p>
-          Insert Tanya Or Andy Question Here
-        </p>
+        <p>Insert Tanya Or Andy Question Here</p>
       </div>
-      <div className="TanyaOrAndyButtons">
-      <span className="Tanya">
-        <img className="TanyaImage" alt="Pic of Tanya" src={TanyaFunny}/>
-        <p>Tanya</p>
-      </span>
-      <span className="Andy">
-      <img className="AndyImage" alt="Pic of Andy" src={AndyFunny}/>
-      <p>Andy</p>
-      </span>
+        <div className="TanyaOrAndyButtons">
+        <span className="Tanya">
+          <button className="TanyaButton">  </button>
+            <img className="TanyaImage" alt="Pic of Tanya" src={TanyaFunny}/>
+            <p>Tanya</p>
+        </span>
+        <span className="Andy">
+          <button className="AndyButton"> </button>
+            <img className="AndyImage" alt="Pic of Andy" src={AndyFunny}/>
+            <p>Andy</p>
+        </span>
       </div>
+
       <div className="CorrectOrIncorrect">
         <span className="Correct">
           <p>Correct, you'll be ordering a Pornstar Martini!</p>
@@ -38,4 +39,6 @@ function App() {
   );
 }
 
+
 export default App;
+*/

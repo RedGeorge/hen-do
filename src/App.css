@@ -12,13 +12,16 @@
 .App-header {
   background-color: #fd74cf;
   display: flex;
-  flex-direction: column;
   align-items: top;
   justify-content: center;
   color: #e8009a;
-  padding-top: 0.5em;
   -webkit-text-stroke: #7504b1;
   -webkit-text-stroke-width: 0.5px;
+}
+
+#pageTitle {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .App-link {
@@ -35,11 +38,12 @@
 }
 
 body {
-font-size: 1.5rem;
 background-color: #fd74cf;
 color: #e8009a;
 -webkit-text-stroke: #7504b1;
 -webkit-text-stroke-width: 0.5px;
+font-family: Calibri;
+margin: 0px;
 }
 
 .TanyaOrAndyButtons {
@@ -69,18 +73,76 @@ color: #e8009a;
 @media only screen and (min-width: 601px) {
   header {
     font-size: 60px;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
   }
   body {
     font-size: 30px;
     }
+  .navButtonList{
+    font-size: 20px;
+  }
+  .navbarWarning {
+    font-size: 20px;
+  }
+  nav {
+    border-bottom: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 /* If the screen size is 600px or less, set the font-size of <div> to 30px */
 @media only screen and (max-width: 600px) {
   header {
     font-size: 30px;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
   }
   body {
     font-size: 15px;
     }
+  .navButtonList {
+    font-size: 10px;
+  }
+  .navbarWarning {
+    font-size: 10px;
+  }
+  nav {
+    border-bottom: 1px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+}
+
+nav { 
+  display: flex;
+  justify-content: space-around;
+  background-color: #e8009a;
+  width: 100%;
+  border-bottom-style: solid;
+  border-bottom-color: #7504b1;
+}
+
+.navButtonList {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px;
+  width: 100%;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.navButtons {
+  list-style: none;
+  -webkit-text-stroke: #ff06ea;
+  -webkit-text-stroke-width: 0.1px;
+}
+
+.navbarWarning {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  margin: 0px;
 }
