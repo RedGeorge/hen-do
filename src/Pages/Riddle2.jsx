@@ -1,9 +1,22 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import '../App.css';
 import AndyFunny from '../Andy-Funny.jpg';
 import TanyaFunny from '../Tanya-Funny.jpg';
 
 function Riddle2 (){
+
+    useEffect( () => {
+        fetchItems();
+    }, []);
+
+    const [items, setItems] = useState([]);
+
+    const fetchItems = async () => {
+        const data = await fetch('/Riddle2');
+        const items = await data.json();
+        setItems(items);
+    };
+
     return(
         <div className="App">
             <header className="App-header">
