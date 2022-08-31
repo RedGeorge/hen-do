@@ -1,16 +1,24 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import '../App.css';
 import AndyFunny from '../Andy-Funny.jpg';
 import TanyaFunny from '../Tanya-Funny.jpg';
 
 function Riddle4 (){
+
+    useEffect( () => {
+        fetchItems();
+    }, []);
+
+    const [items, setItems] = useState([]);
+
+    const fetchItems = async () => {
+        const data = await fetch('/Riddle4');
+        const items = await data.json();
+        setItems(items);
+    };
+
     return(
         <div className="App">
-            <header className="App-header">
-                <p id="pageTitle">
-                Tanya & Her Bad Bitches' Scavenger Hunt
-                </p>
-            </header>
             <body>
                 <div className="TanyaOrAndy">
                     <p>Insert Tanya Or Andy Question Here</p>

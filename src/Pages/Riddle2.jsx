@@ -19,11 +19,6 @@ function Riddle2 (){
 
     return(
         <div className="App">
-            <header className="App-header">
-                <p id="pageTitle">
-                Tanya & Her Bad Bitches' Scavenger Hunt
-                </p>
-            </header>
             <body>
                 <div className="TanyaOrAndy">
                     <p>Insert Tanya Or Andy Question Here</p>
