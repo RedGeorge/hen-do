@@ -19,7 +19,6 @@ function Home(){
 
     return(
         <div className="Home">
-            <body>
                 <div className="TanyaOrAndy">
                     <p>Insert Tanya Or Andy Question Here</p>
                 </div>
@@ -35,8 +34,6 @@ function Home(){
                         <p>Andy</p></button>
                     </span>
                 </div>
-            </body>
-
       </div>
     );
 };
