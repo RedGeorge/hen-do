@@ -1,22 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import '../App.css';
 import AndyFunny from '../Andy-Funny.jpg';
 import TanyaFunny from '../Tanya-Funny.jpg';
 
 function Home(){
-
-    useEffect( () => {
-        fetchItems();
-    }, []);
-
-    const [items, setItems] = useState([]);
-
-    const fetchItems = async () => {
-        const data = await fetch('/Home');
-        const items = await data.json();
-        setItems(items);
-    };
-
     return(
         <div className="Home">
                 <div className="TanyaOrAndy">
