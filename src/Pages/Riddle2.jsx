@@ -6,6 +6,7 @@ function Riddle2 (){
     return(
         <div className="App">
             <body>
+                <h1>This is Riddle2 Page!</h1>
                 <div className="TanyaOrAndy">
                     <p>Insert Tanya Or Andy Question Here</p>
                 </div>
