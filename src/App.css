@@ -51,6 +51,40 @@ margin: 0px;
   justify-content: center;
 }
 
+.Neither {
+  display: none;
+}
+
+#TanyaButton {
+  visibility: hidden;
+}
+
+#TanyaButtonLabel {
+  margin: 0px;
+}
+
+#TanyaButton:checked + div {
+  background-color:rgba(241, 0, 169, 0.762);
+  border-color: #e8009a;
+  border-style: solid;
+  padding-top: 10px;
+}
+
+#AndyButton:checked + div {
+  background-color:rgba(241, 0, 169, 0.762);
+  border-color: #e8009a;
+  border-style: solid;
+  padding-top: 10px;
+}
+
+#AndyButton {
+  visibility: hidden;
+}
+
+#AndyButtonLabel {
+  margin: 0px;
+}
+
 .Tanya {
   padding: 1em;
 }
@@ -62,11 +96,29 @@ margin: 0px;
 .TanyaImage {
   max-width: 100%;
   max-height: auto;
+  border-radius: 40%;
 }
 
 .AndyImage {
   max-width: 100%;
   max-height: auto;
+  border-radius: 40%;
+}
+
+.TanyaOrAndyQuestion {
+  background-color:rgba(255, 164, 228, 0.764);
+  border-color: #e8009a;
+  border-style: solid;
+}
+
+.riddleQuestion {
+  background-color:rgba(255, 164, 228, 0.764);
+  border-color: #e8009a;
+  border-style: solid;
+}
+
+h2 {
+  margin: 0.5em;
 }
 
 /* If the screen size is 601px or more, set the font-size of <div> to 80px */

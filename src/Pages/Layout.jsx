@@ -4,6 +4,8 @@ import Navbar from "../Navbar";
 import "../App.css";
 
 const Layout = () => {
+  //let tanyaOrAndyQAnswered = false;
+  //let tanyaOrAndyQCorrect = null;
   return (
     <>
       <Navbar />
